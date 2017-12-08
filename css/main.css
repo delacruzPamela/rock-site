@@ -1,0 +1,166 @@
+/*MENU HAMBURGUESA*/
+.main-hamburger {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    height: 2px;
+    width: 24px;
+    background: #d0d0d0;
+  }
+
+.main-hamburger::before, .main-hamburger::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 24px;
+    display: block;
+    background: #d0d0d0;
+  }
+
+.main-hamburger::before {
+    top: -8px;
+  }
+  
+.main-hamburger::after {
+    top: 8px;
+  }
+
+/*STYLE*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+
+/*STYLE FOR THE NAVEGATOR*/
+.bg-reverse {
+    background-color: #383e42;
+    color: #ffffff;
+  }
+
+/*Importante los elementos primero, luego id, clases, asi sucesivamente*/
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+nav {
+    padding: 14px;
+    overflow: hidden; /* HIDDEN: El contenido es recortado y no se muestran barras de posición. (se ajusta el texto y no se muestra scroll)*/
+} 
+
+.nav-left {
+    font-size: 1.25rem;
+    float: left;
+    padding-left: 35px;
+}
+
+.nav-right {
+    float: right;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 300;
+}
+  
+h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+  
+.text-center {
+    text-align: center;
+}
+
+.bg-header {
+    background-image: url("../assets/images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* cover: Cambiar el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar la imagen o cortar un poco de uno de los bordes*/
+    background-position: center center;
+  }
+
+.overlay { /* OVERLAY: cubre la seccion header separado de nav*/
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem 0;
+  }
+
+/*STYLE FOR THE SECTIONS*/
+.text-rock, figure {
+    color: #393939;
+    padding: 3rem 4.5rem;
+    display: inline-block;
+    align-self: center;
+  }
+  
+.text-rock p {
+    line-height: 1.5;
+  }
+
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+  }
+  
+/*STYLE FOR THE FOOTER*/
+footer {
+    padding: 3rem;
+}
+  
+.col-section {
+    width: 100%;
+}
+
+.view-mobile {
+    display: block;
+}
+  
+.view-desktop {
+    display: none;
+}
+  
+/* STYLE ONLY FOR THE DESKTOP*/
+ul li {
+    display: inline-block;
+    padding: 5px 15px;
+  }
+
+/*GRID MOVIL AND DESKTOP*/
+/*GRID MOVIL/ TABLET*/
+@media (min-width: 768px) {
+    .col-section {
+     width: 50%;
+     float: left;
+   }
+ 
+   section {
+     overflow: auto;
+     display: flex;
+   }
+ 
+   .text-rock {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+ 
+   .overlay {
+     padding: 10rem 0;
+   }
+   
+   .view-mobile {
+     display: none;
+   }
+   
+   .view-desktop {
+     display: block;
+   }
+ }
+ 
+ /*GRID DESKTOP*/
+ @media (min-width: 1200px) {
+   section{
+     margin: 0 10rem;
+   }
+ }

@@ -4,74 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Site</title>
     <!--Logo que se mostrara en mi navegador-->
     <link rel="shorcut icon" type="image/logo.png" href="assets/images/logo.jpg">
     <!--Google fonts tipo de letra-->
-   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-   <!--Enlazamos nuestro grid-->
-   <link rel='stylesheet' href="css/main-sin-gutter.css"> 
-   <!--Enlazamos nuestro main css-->
-   <link rel='stylesheet' href="css/main.css">
-    <title>Rock Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <!--Enlazamos nuestro main css-->
+    <link rel='stylesheet' href="css/main.css">
 </head>
 <body>
     <!--HEADER-->
-    <header>
+    <header class="bg-reverse">
          <!--NAVIGATOR-->
-         <nav>
-             <div>
-                 <a href="#">Start Bootstrap</a>
-             </div>
-             <ul>
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Services</a></li>
-                 <li><a href="#">Contact</a></li>
-             </ul>
-         </nav>
-         <!--VISTA PRINCIPAL-->
-         <div>
-             <div>
-                 <h1>One Page Wonder</h1>
-                 <h2>Will Rock Socks off</h2>
-             </div>
-         </div>
+        <nav>
+            <!--Nav left-->
+            <div class="nav-left">
+                <a href="#">Start Bootstrap</a>
+            </div>
+            <!--Se muestra el menu hamburguesa a medida que la pantalla se encoja-->
+            <div class="nav-right view-mobile">
+                <a href="#" class="main-hamburger"></a>
+            </div>
+            <!--Nav right-->
+            <ul class="nav-right view-desktop">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!--VISTA PRINCIPAL-->
+        <div class="bg-header text-center">
+            <div class="overlay">
+                <h1>One Page Wonder</h1>
+                <h2>Will Rock Your Socks Off</h2>
+            </div>
+        </div>
     </header>
     <!--SECTION ABOUT ROCK-->
     <section>
-        <div>
+        <div class="text-rock col-section">
             <h2>For those about to rock...</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
         </div>
-        <figure>
-            <img src="assets/images/rock1.jpg" alt="image-rock1">
+        <figure class="col-section">
+            <img class="img-circle" src="assets/images/rock1.jpg" alt="image-rock1">
         </figure>
     </section>
     <!--SECTION WE SALUTE YOU-->
     <section>
-        <figure>
-            <img src="assets/images/rock2.jpg" alt="image-rock2">
+        <figure class="col-section">
+            <img class="img-circle" src="assets/images/rock2.jpg" alt="image-rock2">
         </figure>
-        <div>
+        <div class="text-rock col-section">
             <h2>We salute you!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
         </div>
     </section>
     <!--SECTION LET THERE BE ROCK-->
     <section>
-        <div>
+        <div class="text-rock col-section">
             <h2>Let there be rock!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
         </div>
-        <figure>
-            <img src="assets/images/rock3.jpg" alt="image-rock3">
+        <figure class="col-section">
+            <img class="img-circle" src="assets/images/rock3.jpg" alt="image-rock3">
         </figure>
     </section>
     <!--FOOTER-->
-    <footer>
+    <footer class="bg-reverse text-center">
         <p>Copyright © Pamela Website 2017</p>
     </footer>
-
-    
 </body>
 </html>
